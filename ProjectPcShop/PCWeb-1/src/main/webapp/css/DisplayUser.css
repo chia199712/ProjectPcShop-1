@@ -1,0 +1,109 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/indexBGs.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.body-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+form{
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5rem 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+
+form h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+form .output-container{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.output-con{
+    position: relative;
+    height: 48px;
+}
+
+.output-container output{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: .6rem 1rem;
+    border: 1.2px solid rgb(221, 221, 221);
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+
+    outline: none;
+
+    transition: all .3s ease;
+}
+
+.output-con output:focus{
+    border: 1.2px solid #000;
+    background: rgba(255, 255, 255);
+}
+
+.output-con label{
+    position: absolute;
+    pointer-events: none;
+    left: 1rem;
+    top: .7rem;
+
+    color: rgb(160, 160, 160);
+
+    transition: all .3s ease;
+}
+
+.form-in:focus + label{
+    font-size: .7rem;
+    color: #000;
+    top: -1rem;
+    left: .2rem;
+}
+
+.form-in:not(:focus).form-in:not(:placeholder-shown) + label{
+    font-size: .7rem;
+    color: #000;
+    top: -1rem;
+    left: .2rem;
+}
+
+#btnsub{
+    width: 100%;
+    height: 48px;
+    margin-top: 2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(204, 204, 204);
+}
+
+#btnsub:hover{
+    background-color: rgb(150, 150, 150);
+    cursor: pointer;
+}

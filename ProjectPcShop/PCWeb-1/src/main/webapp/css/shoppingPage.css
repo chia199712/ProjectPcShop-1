@@ -1,0 +1,247 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+header{
+    position: fixed;
+}
+
+.header-con{
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 2px 5px 3px rgba(255, 255, 255, 0.6);
+    opacity: 1;
+}
+
+.header-con:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 2px 5px 3px rgba(255, 255, 255, 0.8);
+}
+
+.header-page{
+    background-image: url("../img/shoppingPageHeader.jpg");
+    width: 100%;
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-page+h1{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 3.5rem;
+    font-weight: 500;
+}
+
+.main-body{
+    margin: 0 auto;
+    margin-top: 3.5rem;
+    display: flex;
+}
+
+.classification{
+    flex: 1.5 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.classification h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: .5rem;
+    padding-right: 5rem;
+    border-bottom: 1.5px solid rgb(192, 192, 192);
+    position: relative;
+}
+
+.classification ul{
+    list-style: none;
+    padding-right: 7rem;
+}
+
+.classification ul li{
+    margin-top: 1rem;
+}
+.classification ul li:first-child{
+    margin-top: 1.5rem;
+}
+
+.classification ul li a{
+    font-size: 1.2rem;
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+}
+
+.classification ul li a:hover{
+    color: #000;
+}
+
+.all-item{
+    flex: 5 1;
+    box-sizing: border-box;
+    margin: 0;
+    padding-right: 8rem;
+    padding-bottom: 2rem;
+}
+
+.box-container{
+    padding: 1.5rem;
+}
+
+.box{
+    background-color: rgb(232, 232, 232);
+    box-shadow: 2px 2px 5px 3px rgb(211, 211, 211);
+    text-align: center;
+    height: 450px;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+
+    position: relative;
+}
+
+.box:hover img{
+    transform: scale(1.2);
+}
+
+.box .item-img{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    display: flex;
+}
+
+.box .item-img img{
+    width: 100%;
+    transition: all .3s ease;
+    align-items: center;
+}
+
+.box h3{
+    margin: 1rem 0;
+    position: relative;
+}
+
+.box h3 a{
+    color: rgb(73, 73, 73);
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.box h3 a:hover{
+    color: #000;
+}
+
+.box h3::after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1.1px;
+    background-color: rgb(173, 173, 173);
+    bottom: -5px;
+    left: 10%;
+}
+
+.box p{
+    padding: 1rem;
+    height: 17%;
+}
+
+.box-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    gap:1.5rem;
+    position: relative;
+    bottom: -1rem;
+    margin-top: 2rem;
+}
+
+.box-footer p{
+	padding: 0;
+	margin: 0;
+}
+
+.box-footer h5{
+    margin: 0;
+}
+
+.add-cart-btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.add-cart-btn i{
+    position: absolute;
+    font-size: 1.5rem;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.add-cart-btn span{
+    position: relative;
+    top: -2px;
+    left: 2rem;
+    font-weight: 700;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.add-cart-btn input{
+    position: absolute;
+    background: #fff;
+    border: 1px solid rgb(155, 155, 155);
+    border-radius: 5px;
+    width: 150%;
+    height: 32px;
+    left: -5px;
+    top: -6px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.add-cart-btn input:hover{
+    background: rgb(39, 39, 39);
+    transition: all .15s ease;
+}
+
+.add-cart-btn input:hover+.fa-cart-plus{
+    color: #fff;
+    transition: all .15s ease;
+}
+
+.add-cart-btn input:hover+i+span{
+    color: #fff;
+    transition: all .15s ease;
+}
+
+@media screen and (max-width: 1200px){
+    .add-cart-btn span{
+        display: none;
+    }
+
+    .add-cart-btn input{
+        width: 40px;
+        top: -18px;
+        background: none;
+        border: none; 
+    }
+
+    .add-cart-btn input:hover{
+        background: none;
+        transition: all .15s ease;
+    }
+    
+    .add-cart-btn input:hover+.fa-cart-plus{
+        color: rgb(0, 0, 0);
+        transition: all .15s ease;
+    }
+}

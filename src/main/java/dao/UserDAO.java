@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 import bean.User;
 
 /**
- * 使用者資料存取物件 - 修復版本
+ * 使用者資料存取物件 - 改良版本
  * - 使用 PreparedStatement 防止 SQL 注入
  * - 改善異常處理
  * - 加入日誌記錄

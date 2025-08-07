@@ -22,7 +22,7 @@ import service.UserService.RegistrationResult;
 import util.ValidationUtil;
 
 /**
- * 使用者註冊控制器 - 重構版本
+ * 使用者註冊控制器 - 改良版本
  * - 使用 Service 層處理業務邏輯
  * - 改善安全性和錯誤處理
  * - 加入日誌記錄

@@ -2,7 +2,7 @@
 
 ## 📋 遷移概述
 
-將現有的 Java Web 應用程式從傳統的 Servlet + JSP 架構遷移到現代的 Spring Boot 架構。
+將現有的 Java Web 應用程式從 Servlet + JSP 架構升級到 Spring Boot 架構。
 
 ## 🎯 遷移目標
 

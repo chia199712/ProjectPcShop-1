@@ -269,27 +269,6 @@ mvn checkstyle:check
 - 使用者註冊和登入
 - 商品展示頁面
 
-## 📞 支援和聯繫
-
-- **問題回報**: [GitHub Issues](https://github.com/chia199712/ProjectPcShop-1/issues)
-- **功能請求**: [GitHub Discussions](https://github.com/chia199712/ProjectPcShop-1/discussions)
-- **Email**: developer@pcshop.com
-- **文檔**: [Wiki](https://github.com/chia199712/ProjectPcShop-1/wiki)
-
-## 📄 授權條款
-
-此專案採用 MIT 授權條款 - 詳情請參閱 [LICENSE](LICENSE) 檔案。
-
-## 🙏 致謝
-
-感謝所有為這個專案做出貢獻的開發者和使用者。特別感謝：
-
-- [Spring Framework](https://spring.io/) 提供優秀的 Java 框架
-- [Bootstrap](https://getbootstrap.com/) 提供響應式 CSS 框架
-- 所有開源社群的貢獻
-
----
-
 <p align="center">
   Made with ❤️ by PC商城開發團隊
 </p>
